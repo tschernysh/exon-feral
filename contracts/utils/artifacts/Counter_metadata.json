@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Provides an incrementing uint256 id acquired by the `Counter#next` getter. Use this for issuing ERC721 ids or keeping track of request ids, anything you want, really. Include with `using Counter for Counter.Counter;`",
+			"kind": "dev",
+			"methods": {},
+			"title": "Counter",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Does not allow an Id of 0, which is popularly used to signify a null state in solidity. Does not protect from overflows, but if you have 2^256 ids, you have other problems. (But actually, it's generally impossible to increment a counter this many times, energy wise so it's not something you have to worry about.)",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fury/contracts/contracts/utils/Counters.sol": "Counter"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"fury/contracts/contracts/utils/Counters.sol": {
+			"keccak256": "0x0614e488a3816dff7b27d1c0c96ff31cbe94b551f58e9eedf668aa6c53ada864",
+			"urls": [
+				"bzz-raw://31f17bf4ca21361318ee2b75b7786403636659295c35875d12c7ed844a8d8b00",
+				"dweb:/ipfs/QmYN7DsJFe4JzsvFaPvL3jvZVe3rau822h8idmhv7SXRxZ"
+			]
+		}
+	},
+	"version": 1
+}

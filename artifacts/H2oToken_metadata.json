@@ -1,0 +1,753 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getH2oContractAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinContract",
+				"outputs": [
+					{
+						"internalType": "contract GremlinContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinContractAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType1",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTType1",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType1Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType2",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTType2",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType2Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType3",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTType3",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType3Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType4",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTType4",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType4Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType5",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTType5",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType5Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTType6Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinNFTTypeGem",
+				"outputs": [
+					{
+						"internalType": "contract GremlinNFTTypeGem",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gremlinToken",
+				"outputs": [
+					{
+						"internalType": "contract GremlinToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gremlinTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "setGremlinAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_gremlinContractAddress",
+						"type": "address"
+					}
+				],
+				"name": "setGremlinContractAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_nftContractAddresses",
+						"type": "address[]"
+					}
+				],
+				"name": "setNftAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fury/contracts/h2oToken.sol": "H2oToken"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Counters.sol": {
+			"keccak256": "0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee",
+				"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu"
+			]
+		},
+		"fury/contracts/contracts/token/ERC721/ERC721.sol": {
+			"keccak256": "0x4e589a85d892438e78bb334324f424a06b82e58805ce96af144530510b2ae1ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be724115a51ccc1667c0e47b1283a2d649b6e3dcb19980c39f755b212796e4d9",
+				"dweb:/ipfs/QmWzizq9jvo9DvFmw5UbM24gCLKxGtFbSRNZuE9qWpgxvH"
+			]
+		},
+		"fury/contracts/contracts/token/ERC721/IERC721.sol": {
+			"keccak256": "0xb691b9ba9e5a08ee4d4201f9125892420ce6f0e595c3f4014790c71f64475872",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d5757a17d5de817abac51de72a4b2528272e6d784eb0f534f25ec4cfa87525c7",
+				"dweb:/ipfs/QmS5GFinq87NPYruFH5yQo5A2aDagvNRjhi7DCtQPhAZR3"
+			]
+		},
+		"fury/contracts/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xf7ff3613d8bad1bc3e25a435ccdf9273bc23308f3c3e71152f8b4bf75cc632e9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c0661b4e567d7e848581c7dd77e60dec2ce800b5b491f5dc3e18a6d1dc8dce0",
+				"dweb:/ipfs/QmZjAczySSrqtmKK2JRM7VARie7wMiBY1sUbt4DKkLfFnd"
+			]
+		},
+		"fury/contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+			"keccak256": "0x4efae37327cb35cfe276e9d7900c4159b5992bc255030b1ec7525a7297cfb686",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9a39e1bcd1adc74b9e085938e9d245c00fbbd08a313311fc806d6b8c2cb4b438",
+				"dweb:/ipfs/QmR5TwUm1dkYZ5uBRW8w6gaduYZaNdRFWiSjTARy1WMhdC"
+			]
+		},
+		"fury/contracts/contracts/utils/Context.sol": {
+			"keccak256": "0x639f180f9bedd48998c68f1bf4f8d01b37a4573bc496acb04a55308c6de0045c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ff2313c66e4e14d167aae923b38509ec68dcaa281d2314f45b527139d33d4af",
+				"dweb:/ipfs/QmU7aik96EmKeG8feBbQZ8BufngtYB6guGTkZoX5umP73i"
+			]
+		},
+		"fury/contracts/contracts/utils/Strings.sol": {
+			"keccak256": "0x6c5e9761ed1ed57b402469c657969c39af9572bc691ecb660f949e251809606d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://695b013d6f54e050b800f78ccd1c647f9a055322b920af1fb6c5a7b917df02f1",
+				"dweb:/ipfs/QmPeEaiGk8ptbvrSSCGipVJWW2K6zUS4XLoq8R2o24GXxD"
+			]
+		},
+		"fury/contracts/contracts/utils/introspection/ERC165.sol": {
+			"keccak256": "0x080b124383ec4cae37ea3e96c3b3910d20a99b05c72f6f272898ec839b72f9dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b363ade0054534f553ead520d60c46e28329133f26dab03551484b35c61c99a5",
+				"dweb:/ipfs/QmfNPDd23KYGtWUWX2AcRytXjoUu6xuc91hpQLnHCE9SUz"
+			]
+		},
+		"fury/contracts/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x39194d726021816f8a5f2b821574349a4884833cf841378dc8e6862e5f789ed6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08cfffa942e4589c4d927db3fecfea998e9486ff41f48ee905fdda34d152a846",
+				"dweb:/ipfs/QmQKwHL48iBd5XzRAnSNnGBXo6Ykt22iADEReEusX1SQvK"
+			]
+		},
+		"fury/contracts/contracts/utils/math/Math.sol": {
+			"keccak256": "0xffe8a176523d38132299bc22fd6bb138954ba3f35d41a86d004dac50dc31b615",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67b3d7e2d3042e5061168827e518b2eb546be0f4a3f764f654c28205c5a428e5",
+				"dweb:/ipfs/Qma3d9Vim9NrzWAFASxpDppgGXo8MWZ6zorsgAYYXsbXph"
+			]
+		},
+		"fury/contracts/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0x63a4fc7046bc052edeec923181f2f886681e1e0b34c4f23ce84425acfe80a1fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9cee5cb5fa0dc7d47c463f900b5fcd44abe84f6bce23433898af1221598a3a9b",
+				"dweb:/ipfs/Qmdjp7Pf6RuGgAnSxUKd9CvniN8gUG6wLH1cdvhg5L9w4z"
+			]
+		},
+		"fury/contracts/gremlinContract.sol": {
+			"keccak256": "0xfd71b539b286e0fbc547d58cffc3de164ee00a31a68afbfda3cc35237f5552db",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4e48bd79573a314752261dfdda905e82f44b434d94ba5d05c19b66e85766256d",
+				"dweb:/ipfs/QmQ7KNEvvQoWRjKyaD7qLxHXnWeHa9kWh6ff3LVRqrjxTj"
+			]
+		},
+		"fury/contracts/gremlinToken.sol": {
+			"keccak256": "0xb8bd226d31f1115ae480cf08780e2734bf17fa600d09b0ce5e1ce02b23d6f8f4",
+			"urls": [
+				"bzz-raw://ea26b6d30e8de1222b56f7c0bbd2c2e50031ab2ccea4d74b41bd6d614294f89b",
+				"dweb:/ipfs/QmbQvqBNxiA4qPC3Gnr7BVGGP63mEoNxdYvD7Jq5aWFBVH"
+			]
+		},
+		"fury/contracts/h2oToken.sol": {
+			"keccak256": "0x56287f22fc4ad06aa824ec5f8b23769df81cf7c9664662a069938ae84f08fdc1",
+			"urls": [
+				"bzz-raw://845e824bda51ff2c4254a94e3ff2eaaf5bba434d2fb36abcab379c739fd4932b",
+				"dweb:/ipfs/QmNScWbukudHYBTvwi15wnT1osK7cPoTWVRvRnJMg4yU3i"
+			]
+		},
+		"fury/contracts/libraries/safeMath.sol": {
+			"keccak256": "0x0288acf7940f8ef4192402a2269755ae3c4144a4c24c52a526989e01bb3f378c",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://1c4a74208f275887b7bf8d9269090a5bd048baf0e3e14ba8858da5514822e861",
+				"dweb:/ipfs/QmXjNWqy2ujZNj9jd9QnSP9xqWZNdfTZmLcBsrnqgJXHnA"
+			]
+		},
+		"fury/contracts/nftContract.sol": {
+			"keccak256": "0x95a9bf402a2b9df070709a430c46eb815dbf9f92b1160f7cdb18fa49271b8ab1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7c7cd9e638501e7efab7683c306a132e547bb87b8653e3e3065c1fd17732cf50",
+				"dweb:/ipfs/QmWH27tgR1JAo3fZguJzZgQtTarUXZKfrj5GromTquabki"
+			]
+		},
+		"fury/contracts/nftContracts/nft1.sol": {
+			"keccak256": "0xdc76c12cd68d32977d02e287f324130288d2501ee7966670f7c481a066fcf71d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aebd80c0a3fe2b0c4f074f54a5cd87e3d34c31083f2364be36dcb5289d1627f9",
+				"dweb:/ipfs/QmWFwgCYEwJmiFuqFmKT2hFsCMmQnZDDaoKAcnMZRCmMLs"
+			]
+		},
+		"fury/contracts/nftContracts/nft2.sol": {
+			"keccak256": "0xa745ca7d356e4f6e10cd3fa0d78171ef7b99ab329e20a1bc8f86708db385153d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://92b82f3401d4ab1ce3d4289292f74058f95df497c3e1e28515bb5b158b48c7d8",
+				"dweb:/ipfs/QmR4vvaXPNVvGBnZMwYC4wiBsNtuKf8nMwe3wD1sY1cVbe"
+			]
+		},
+		"fury/contracts/nftContracts/nft3.sol": {
+			"keccak256": "0x37c93eaa0fcecbdbfc53fafcb6a6758e1aeae436480e743aafa16053a33abeed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f0d80f431645bb05f7e8a2344088eba4d7796b9b4d84c050a0a20908c2ce865",
+				"dweb:/ipfs/QmWmPPG2netpozpGTByDhxDsz7f7m35WBEvugUJRhWggFi"
+			]
+		},
+		"fury/contracts/nftContracts/nft4.sol": {
+			"keccak256": "0x40997cef4d0f0317672b2980102f757b63aa406005b745ccafccc9298fbd02ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a5f3040e22c353f53c73d0bb694fa0f793c24a2d166440f7498cdaeb11b6c5d9",
+				"dweb:/ipfs/Qmbf9cxSxZVuwFV7d8jFUT8XWAbnJYwGfCPaKsQeTU6wME"
+			]
+		},
+		"fury/contracts/nftContracts/nft5.sol": {
+			"keccak256": "0x2cacb3d5a30bb300bf5bd6a928f36db996ac52efadbbcbdc9fdbad211a9e73b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ddaef40a684bf7e2ef6a4dd9b915693522495a0da6318b42fdb3d602a9a35fde",
+				"dweb:/ipfs/QmRyyms2J61z1KmevRmrjbzNbQsPjpZXrts13Q9FGMQLgb"
+			]
+		},
+		"fury/contracts/nftContracts/nft6.sol": {
+			"keccak256": "0xae8f0e852aceac6aa7d12e47a180c33e92bd99a0d398e2b46c7d447d7ae51eab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c67eb5d1c18bbc1fb43820cd7f63ff19babd0d2a4022d4bf76aacba8e19f16d",
+				"dweb:/ipfs/QmNgXE1WCgG8ytPbucpTBqG4bXxzTDC8JnbaRySdYQCZvt"
+			]
+		}
+	},
+	"version": 1
+}

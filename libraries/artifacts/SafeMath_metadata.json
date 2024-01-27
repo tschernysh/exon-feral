@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Unsigned math operations with safety checks that revert on error",
+			"kind": "dev",
+			"methods": {},
+			"title": "SafeMath",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"fury/contracts/libraries/safeMath.sol": "SafeMath"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"fury/contracts/libraries/safeMath.sol": {
+			"keccak256": "0x0288acf7940f8ef4192402a2269755ae3c4144a4c24c52a526989e01bb3f378c",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://1c4a74208f275887b7bf8d9269090a5bd048baf0e3e14ba8858da5514822e861",
+				"dweb:/ipfs/QmXjNWqy2ujZNj9jd9QnSP9xqWZNdfTZmLcBsrnqgJXHnA"
+			]
+		}
+	},
+	"version": 1
+}
